@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/img_tranport"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/plane"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:id="@+id/txt_num_ticket"
+            android:layout_height="wrap_content"
+            android:text="78A"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/comfortaa_font"
+            android:layout_gravity="center"
+            android:textColor="@color/white"
+            android:textSize="30sp"/>
+
+        <TextView
+            android:id="@+id/txt_travel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fly from Barcelona to Madrid"
+            android:fontFamily="@font/comfortaa_bold"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            android:textColor="@color/white"
+            android:textSize="18sp"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:layout_marginEnd="25dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginEnd="16dp"
+                android:src="@drawable/handbag"/>
+
+            <TextView
+                android:id="@+id/txt_baggage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Fly from Barceloasdjfsadlkfhsalkjdfhasjkldfhasljkfhna to Madrid"
+                android:layout_gravity="center"
+                android:fontFamily="@font/comfortaa_font"
+                android:textColor="@color/white"
+                android:textSize="15sp"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_marginTop="20dp"
+            android:layout_height="2dp"
+            android:background="@color/white"/>
+    </LinearLayout>
+
+</RelativeLayout>
