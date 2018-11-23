@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.os.Handler
 import android.support.v7.widget.LinearLayoutManager
 import android.support.v7.widget.RecyclerView
+import android.util.Log
 import android.view.View
 import android.widget.Button
 import android.widget.ImageView
@@ -45,6 +46,11 @@ class MainActivity : AppCompatActivity(), MainView {
 
         var adapter = MainAdapter(list)
         recyclerView.adapter = adapter
+
+        // just to show result in Logcat
+        list.forEach {
+            Log.i("TICKET_SORTED_ARRAY", "${it.origin} to ${it.destination}")
+        }
     }
 
     var sortClick = View.OnClickListener {

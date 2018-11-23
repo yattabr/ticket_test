@@ -31,6 +31,7 @@ class MainAdapter(var origList: ArrayList<Ticket>) : RecyclerView.Adapter<Recycl
         var txtTicketNum = itemView.findViewById(R.id.txt_num_ticket) as TextView
         var txtTravel = itemView.findViewById(R.id.txt_travel) as TextView
         var txtTBaggage = itemView.findViewById(R.id.txt_baggage) as TextView
+        var txtSeat = itemView.findViewById(R.id.txt_seat) as TextView
         var imgTransport = itemView.findViewById(R.id.img_tranport) as ImageView
         lateinit var item: Ticket
 
@@ -40,6 +41,7 @@ class MainAdapter(var origList: ArrayList<Ticket>) : RecyclerView.Adapter<Recycl
             txtTicketNum.text = item.numTicket
             txtTravel.text = "Fly from ${item.origin} to ${item.destination}"
             txtTBaggage.text = item.baggage
+            txtSeat.text = item.seat
 
             when (item.transport) {
                 "Airplane" ->

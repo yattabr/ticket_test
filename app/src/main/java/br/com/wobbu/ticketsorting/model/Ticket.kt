@@ -7,5 +7,6 @@ class Ticket {
     var transport: String = ""
     var baggage: String = ""
     var numTicket: String = ""
+    var seat: String = ""
 
 }

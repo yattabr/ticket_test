@@ -30,12 +30,6 @@ class MainPresenter(var mainView: MainView) {
         // Reverse the list to show the Start Origin to Final Destination
         sortedTickets.reverse()
 
-        // just to show result in Logcat
-        sortedTickets.forEach {
-            Log.i("TICKET_SORTED_ARRAY", "${it.origin} to ${it.destination}")
-        }
-
-
         // call the MainActivity to populate the recyclerView
         mainView.populateRecyclerView(sortedTickets)
 
@@ -56,6 +50,7 @@ class MainPresenter(var mainView: MainView) {
         ticket.destination = "New York"
         ticket.transport = "Airplane"
         ticket.numTicket = "78A"
+        ticket.seat = "25F"
         ticket.baggage = "Baggage will we automatically transferred from your last leg"
         arrayTicket.add(ticket)
 
@@ -64,6 +59,7 @@ class MainPresenter(var mainView: MainView) {
         ticket.destination = "Madrid"
         ticket.transport = "Train"
         ticket.numTicket = "MH24R"
+        ticket.seat = "4D"
         ticket.baggage = "Baggage drop at ticket counter 344"
         arrayTicket.add(ticket)
 
@@ -72,6 +68,7 @@ class MainPresenter(var mainView: MainView) {
         ticket.destination = "London"
         ticket.transport = "Bus"
         ticket.numTicket = "223"
+        ticket.seat = "30"
         ticket.baggage = "Baggage have the ticket 223"
         arrayTicket.add(ticket)
 
@@ -79,6 +76,7 @@ class MainPresenter(var mainView: MainView) {
         ticket.origin = "Madrid"
         ticket.destination = "Portugal"
         ticket.transport = "Airplane"
+        ticket.seat = "06D"
         ticket.numTicket = "R12"
         ticket.baggage = "Baggage already dispatched"
         arrayTicket.add(ticket)
